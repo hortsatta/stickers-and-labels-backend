@@ -1,0 +1,40 @@
+{
+  "collectionName": "components_shop_carts",
+  "info": {
+    "displayName": "Cart Item",
+    "icon": "shopping-cart",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "size": {
+      "type": "component",
+      "repeatable": false,
+      "component": "measurement.size"
+    },
+    "artworkFile": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "quantity": {
+      "type": "integer"
+    },
+    "lamination": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::lamination.lamination"
+    },
+    "productVariant": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::product-variant.product-variant"
+    }
+  }
+}

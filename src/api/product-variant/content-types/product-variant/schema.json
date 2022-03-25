@@ -1,0 +1,72 @@
+{
+  "kind": "collectionType",
+  "collectionName": "product_variants",
+  "info": {
+    "singularName": "product-variant",
+    "pluralName": "product-variants",
+    "displayName": "Product Variant",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "maxLength": 64
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "name"
+    },
+    "price": {
+      "type": "decimal",
+      "required": true,
+      "default": 0
+    },
+    "isActive": {
+      "type": "boolean",
+      "default": true
+    },
+    "size": {
+      "type": "component",
+      "repeatable": true,
+      "component": "measurement.size"
+    },
+    "hasCustomSize": {
+      "type": "boolean",
+      "default": true
+    },
+    "minCustomSizeWidth": {
+      "type": "decimal",
+      "default": 0
+    },
+    "minCustomSizeHeight": {
+      "type": "decimal",
+      "default": 0
+    },
+    "maxCustomSizeWidth": {
+      "type": "decimal",
+      "default": 0
+    },
+    "maxCustomSizeHeight": {
+      "type": "decimal",
+      "default": 0
+    },
+    "minQuantity": {
+      "type": "integer",
+      "default": 0
+    },
+    "product": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::product.product",
+      "inversedBy": "productVariants"
+    },
+    "description": {
+      "type": "text",
+      "maxLength": 200
+    }
+  }
+}

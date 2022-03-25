@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "laminations",
+  "info": {
+    "singularName": "lamination",
+    "pluralName": "laminations",
+    "displayName": "Lamination",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true,
+      "maxLength": 64
+    },
+    "isActive": {
+      "type": "boolean",
+      "default": true
+    }
+  }
+}

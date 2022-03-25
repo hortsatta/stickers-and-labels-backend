@@ -1,0 +1,58 @@
+{
+  "collectionName": "components_info_addresses",
+  "info": {
+    "displayName": "Address",
+    "icon": "map-marker-alt"
+  },
+  "options": {},
+  "attributes": {
+    "firstName": {
+      "type": "string",
+      "maxLength": 64
+    },
+    "lastName": {
+      "type": "string",
+      "maxLength": 64
+    },
+    "contactNo": {
+      "type": "string",
+      "maxLength": 20,
+      "minLength": 7
+    },
+    "regionCode": {
+      "type": "string",
+      "maxLength": 9
+    },
+    "provinceCode": {
+      "type": "string",
+      "maxLength": 9
+    },
+    "cityCode": {
+      "type": "string",
+      "maxLength": 9
+    },
+    "brgyCode": {
+      "type": "string",
+      "maxLength": 9
+    },
+    "zipCode": {
+      "type": "string",
+      "maxLength": 4
+    },
+    "addressLine1": {
+      "type": "string",
+      "maxLength": 200
+    },
+    "label": {
+      "type": "enumeration",
+      "enum": [
+        "home",
+        "work"
+      ]
+    },
+    "isDefault": {
+      "type": "boolean",
+      "default": false
+    }
+  }
+}

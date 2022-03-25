@@ -1,0 +1,34 @@
+{
+  "collectionName": "components_info_personal_infos",
+  "info": {
+    "displayName": "Personal Info",
+    "icon": "address-card",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "firstName": {
+      "type": "string",
+      "maxLength": 64
+    },
+    "lastName": {
+      "type": "string",
+      "maxLength": 64
+    },
+    "contactNo": {
+      "type": "string",
+      "minLength": 7
+    },
+    "gender": {
+      "type": "enumeration",
+      "enum": [
+        "male",
+        "female",
+        "other"
+      ]
+    },
+    "dateOfBirth": {
+      "type": "date"
+    }
+  }
+}

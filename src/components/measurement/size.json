@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_measurement_sizes",
+  "info": {
+    "displayName": "Size",
+    "icon": "crop-alt"
+  },
+  "options": {},
+  "attributes": {
+    "width": {
+      "type": "decimal",
+      "default": 0
+    },
+    "height": {
+      "type": "decimal",
+      "default": 0
+    }
+  }
+}
