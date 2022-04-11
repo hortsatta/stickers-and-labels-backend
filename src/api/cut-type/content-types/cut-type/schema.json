@@ -1,0 +1,19 @@
+{
+  "kind": "collectionType",
+  "collectionName": "cut_types",
+  "info": {
+    "singularName": "cut-type",
+    "pluralName": "cut-types",
+    "displayName": "Cut Type"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "maxLength": 64
+    }
+  }
+}

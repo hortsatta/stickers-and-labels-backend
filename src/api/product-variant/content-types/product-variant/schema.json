@@ -67,6 +67,17 @@
     "description": {
       "type": "text",
       "maxLength": 200
+    },
+    "isSizeConstrained": {
+      "type": "boolean",
+      "default": false
+    },
+    "icon": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
     }
   }
 }
