@@ -29,30 +29,9 @@
       "type": "boolean",
       "default": true
     },
-    "size": {
-      "type": "component",
-      "repeatable": true,
-      "component": "measurement.size"
-    },
     "hasCustomSize": {
       "type": "boolean",
       "default": true
-    },
-    "minCustomSizeWidth": {
-      "type": "decimal",
-      "default": 0
-    },
-    "minCustomSizeHeight": {
-      "type": "decimal",
-      "default": 0
-    },
-    "maxCustomSizeWidth": {
-      "type": "decimal",
-      "default": 0
-    },
-    "maxCustomSizeHeight": {
-      "type": "decimal",
-      "default": 0
     },
     "minQuantity": {
       "type": "integer",
@@ -68,16 +47,18 @@
       "type": "text",
       "maxLength": 200
     },
-    "isSizeConstrained": {
-      "type": "boolean",
-      "default": false
-    },
-    "icon": {
+    "sample": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
+    },
+    "cut_shape": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::cut-shape.cut-shape"
     }
   }
 }

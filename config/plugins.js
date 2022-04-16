@@ -10,7 +10,7 @@ module.exports = ({ env }) => ({
       },
       actionOptions: {
         upload: {
-          public_id: 'sal',
+          folder: env('CLOUDINARY_FOLDER'),
           responsive_breakpoints: {
             max_width: 2000 ,
           },

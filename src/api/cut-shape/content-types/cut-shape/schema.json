@@ -1,0 +1,57 @@
+{
+  "kind": "collectionType",
+  "collectionName": "cut_shapes",
+  "info": {
+    "singularName": "cut-shape",
+    "pluralName": "cut-shapes",
+    "displayName": "Cut Shape",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true,
+      "maxLength": 64
+    },
+    "size": {
+      "type": "component",
+      "repeatable": true,
+      "component": "measurement.size"
+    },
+    "isSizeConstrained": {
+      "type": "boolean",
+      "default": false
+    },
+    "minCustomSizeWidth": {
+      "type": "decimal",
+      "default": 0
+    },
+    "minCustomSizeHeight": {
+      "type": "decimal",
+      "default": 0
+    },
+    "maxCustomSizeWidth": {
+      "default": 0,
+      "type": "decimal"
+    },
+    "maxCustomSizeHeight": {
+      "type": "decimal",
+      "default": 0
+    },
+    "isActive": {
+      "type": "boolean",
+      "default": true
+    },
+    "icon": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}
