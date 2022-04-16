@@ -54,11 +54,6 @@
       "allowedTypes": [
         "images"
       ]
-    },
-    "cut_shape": {
-      "type": "relation",
-      "relation": "oneToOne",
-      "target": "api::cut-shape.cut-shape"
     }
   }
 }
