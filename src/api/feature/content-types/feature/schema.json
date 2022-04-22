@@ -1,0 +1,88 @@
+{
+  "kind": "singleType",
+  "collectionName": "features",
+  "info": {
+    "singularName": "feature",
+    "pluralName": "features",
+    "displayName": "Feature",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "header": {
+      "type": "string",
+      "maxLength": 64
+    },
+    "subHeader": {
+      "type": "string",
+      "maxLength": 200
+    },
+    "featureOneDescription": {
+      "type": "text",
+      "maxLength": 200
+    },
+    "featureTwoDescription": {
+      "type": "text",
+      "maxLength": 200
+    },
+    "featureThreeDescription": {
+      "type": "text",
+      "maxLength": 200
+    },
+    "featureFourDescription": {
+      "type": "text",
+      "maxLength": 200
+    },
+    "featureOneImage": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "featureTwoImage": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "featureThreeImage": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "featureFourImage": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "featureOneName": {
+      "type": "string",
+      "maxLength": 64
+    },
+    "featureTwoName": {
+      "type": "string",
+      "maxLength": 64
+    },
+    "featureThreeName": {
+      "type": "string",
+      "maxLength": 64
+    },
+    "featureFourName": {
+      "type": "string",
+      "maxLength": 64
+    }
+  }
+}
