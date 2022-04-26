@@ -4,7 +4,8 @@
   "info": {
     "singularName": "home",
     "pluralName": "homes",
-    "displayName": "Home"
+    "displayName": "Home",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -16,6 +17,38 @@
     },
     "subHeader": {
       "type": "string"
+    },
+    "sliderHeader": {
+      "type": "string",
+      "maxLength": 64
+    },
+    "sliderSubHeader": {
+      "type": "string",
+      "maxLength": 200
+    },
+    "guideHeader": {
+      "type": "string",
+      "maxLength": 64
+    },
+    "guideSubHeader": {
+      "type": "string",
+      "maxLength": 200
+    },
+    "contactHeader": {
+      "type": "string",
+      "maxLength": 64
+    },
+    "contactSubHeader": {
+      "type": "string",
+      "maxLength": 200
+    },
+    "featureHeader": {
+      "type": "string",
+      "maxLength": 64
+    },
+    "featureSubHeader": {
+      "type": "string",
+      "maxLength": 200
     }
   }
 }
