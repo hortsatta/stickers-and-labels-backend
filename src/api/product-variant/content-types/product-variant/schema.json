@@ -54,6 +54,11 @@
       "allowedTypes": [
         "images"
       ]
+    },
+    "laminationPrice": {
+      "type": "decimal",
+      "default": 0,
+      "required": false
     }
   }
 }
